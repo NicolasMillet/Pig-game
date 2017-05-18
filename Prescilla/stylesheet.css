@@ -1,0 +1,19 @@
+body {
+background-color: PaleGreen;
+margin-left: 200px;
+margin-right: 200px;
+}
+
+p{
+			rgb(221, 238, 170);
+}
+section, header {
+  background-color: WhiteSmoke;
+  border: 2px solid YellowGreen;
+}
+section {
+  padding: 30px;
+}
+h2, h3 {
+  color: YellowGreen;
+}
