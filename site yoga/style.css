@@ -1,0 +1,104 @@
+* {
+  font-family: 'MS Serif', 'New York', sans-serif;
+  font-style: italic;
+}
+#header1 {
+  text-align: center;
+background: linear-gradient(90deg, DeepSkyBlue, royalBlue);
+border : 10px groove DarkSlateGray;
+height: 200px;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  background-color: RebeccaPurple;
+  margin-left: 15px;
+  padding: 15px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: MediumPurple;
+  padding: 10px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+body{
+  margin:0px;
+  padding:0px;
+  background-color: PowderBlue;
+}
+header {
+  height: 600px;
+  background-image: url("contents/deroul1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+#titlHeader {
+  margin-left: 15%;
+  padding-top: 250px;
+}
+#bandeau div p {
+  padding: 10px;
+}
+#bandeau {
+  display: flex;
+  float: right;
+  margin: 10px;
+  padding: 10px;
+  color: white;
+}
+footer {
+  background: linear-gradient(90deg, DeepSkyBlue, royalBlue);
+  border : 10px groove DarkSlateGray;
+height: 120px;
+display: flex;
+}
+.section1 {
+  display: flex;
+}
+.emploi {
+text-align: center;
+display: flex;
+padding: 30px;
+}
+.empl {
+  padding: 20px;
+}
+.foot {
+  margin: 20px;
+}
+#cellule table tr td {
+
+  overflow: hidden;
+  transform: scale(1.5em);
+}
+table { width : 99.8%;
+       height: 400px;
+       border-collapse: collapse;
+     }
+#tel { display: flex;}
+
+td  {border: 1px solid black;
+width: 20%; }
+#yoga img {width: 250px;
+      float: right;
+    margin-left: }
+#phone {
+  width: 50%;
+}
+h3 {
+  text-align: center;
+}
+
+.defilement {
+  height: 800px;
+  background-image: url("contents/yoga5.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.section3 {
+  width: 24%;
+  padding : 20px;
+}
