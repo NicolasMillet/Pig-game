@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jeu Rodolphe</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+
+  <section class="row col-md-offset-4">
+    <h1>NEW GAME</h1>
+  </section>
+
+<section class="row">
+  <div id="dé" class="col-md-offset-4">
+  </div>
+</section>
+
+
+
+   <section id="bottom" class="row">
+
+   <div class="current col-md-2 col-md-offset-2">
+     <p>Player 1</p>
+    <p id="current1"></p>
+    </div>
+
+      <div class="col-md-4">
+    <div><button onclick="ret()">ROLL DICE</button></div>
+   <div><button onclick="hold()">HOLD</button></div>
+    </div>
+
+   <div class="current col-md-2">
+     <p>Player 2</p>
+  <p id="current2"></p>
+   </div>
+
+ </section>
+
+    <script>
+
+    function ret(){
+
+    var lancer = Math.floor((Math.random() * 6) + 1)
+
+     if (lancer===1)
+    {document.getElementById('dé').innerHTML= '<img src="images/dice-1.png">'
+    document.getElementById("current1").innerHTML = Number(0)}
+    if (lancer===2)
+    {document.getElementById('dé').innerHTML= '<img src="images/dice-2.png">'
+    document.getElementById("current1").innerHTML = Number(document.getElementById("current1").innerHTML) + parseInt(lancer)}
+    if (lancer===3)
+    {document.getElementById('dé').innerHTML= '<img src="images/dice-3.png">'
+    document.getElementById("current1").innerHTML = Number(document.getElementById("current1").innerHTML) + parseInt(lancer)}
+    if (lancer===4)
+    {document.getElementById('dé').innerHTML= '<img src="images/dice-4.png">'
+    document.getElementById("current1").innerHTML = Number(document.getElementById("current1").innerHTML) + parseInt(lancer)
+    }
+    if (lancer===5)
+    {document.getElementById('dé').innerHTML= '<img src="images/dice-5.png">'
+    document.getElementById("current1").innerHTML = Number(document.getElementById("current1").innerHTML) + parseInt(lancer)}
+    if (lancer===6)
+    {document.getElementById('dé').innerHTML= '<img src="images/dice-6.png">'
+    document.getElementById("current1").innerHTML = Number(document.getElementById("current1").innerHTML) + parseInt(lancer)}
+    }
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,6 @@
+#bottom {
+  display: flex;
+}
+.current {
+  background-color: rgb(229, 112, 112);
+}
